@@ -12,3 +12,6 @@ composer require ivyhjk/Autobake
 # autobake
 
 Autobake can "auto-generate" all your models, controllers and views from a given database, previously established in your App/config/app.php file.
+
+- It's based on Bake console, but better.
+- Support table prefixes
