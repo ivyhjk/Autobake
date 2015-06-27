@@ -15,8 +15,9 @@ Autobake can "auto-generate" all your models, controllers and views from a given
 
 - It's based on CakePHP Bake console, but better and fast!.
 - Support table prefixes for bake, just add 'prefix' => 'my_prefix_' to your database config.
-	For example: 
-	```php
+	For example:
+
+```php
 	'Datasources' => [
 	        'default' => [
 	            'className' => 'Cake\Database\Connection',
@@ -30,4 +31,4 @@ Autobake can "auto-generate" all your models, controllers and views from a given
 	            'prefix' => 'my_prefix_',
 	        ],
 	    ],
-	```
+```
