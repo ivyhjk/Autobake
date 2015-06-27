@@ -22,9 +22,9 @@ Autobake can "auto-generate" all your models, controllers and views from a given
 	        'default' => [
 	            'className' => 'Cake\Database\Connection',
 	            'driver' => 'Cake\Database\Driver\Mysql',
-	            'host' => '192.168.0.111',
-	            'username' => 'elvis',
-	            'password' => 'elviselvis',
+	            'host' => '127.0.0.1',
+	            'username' => 'username',
+	            'password' => 'y0ur53c3t7p4s5w0rD',
 	            'database' => 'autobake',
 	            'encoding' => 'utf8',
 	            'timezone' => 'UTC',
