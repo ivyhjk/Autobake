@@ -13,5 +13,21 @@ composer require ivyhjk/Autobake
 
 Autobake can "auto-generate" all your models, controllers and views from a given database, previously established in your App/config/app.php file.
 
-- It's based on Bake console, but better.
-- Support table prefixes
+- It's based on CakePHP Bake console, but better and fast!.
+- Support table prefixes for bake, just add 'prefix' => 'my_prefix_' to your database config.
+
+```php
+'Datasources' => [
+        'default' => [
+            'className' => 'Cake\Database\Connection',
+            'driver' => 'Cake\Database\Driver\Mysql',
+            'host' => '192.168.0.111',
+            'username' => 'elvis',
+            'password' => 'elviselvis',
+            'database' => 'autobake',
+            'encoding' => 'utf8',
+            'timezone' => 'UTC',
+            'prefix' => 'my_prefix_',
+        ],
+    ],
+```
