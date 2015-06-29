@@ -1,5 +1,5 @@
 {
-    "name": "ivyhjk/Autobake",
+    "name": "ivyhjk/autobake",
     "description": "Autobake plugin for CakePHP",
     "type": "cakephp-plugin",
     "require": {
