@@ -32,3 +32,8 @@ Autobake can "auto-generate" all your models, controllers and views from a given
 	        ],
 	    ],
 ```
+
+# Usage
+```
+php Shell/prepare all
+```
