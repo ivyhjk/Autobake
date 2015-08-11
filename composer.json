@@ -1,6 +1,7 @@
 {
-    "name": "ivyhjk/Autobake",
+    "name": "ivyhjk/autobake",
     "description": "Autobake plugin for CakePHP",
+    "keywords": ["framework", "cakephp", "plugin", "bake", "autobake"],
     "type": "cakephp-plugin",
     "require": {
         "php": ">=5.4.16",
@@ -19,5 +20,6 @@
             "Autobake\\Test\\": "tests",
             "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }

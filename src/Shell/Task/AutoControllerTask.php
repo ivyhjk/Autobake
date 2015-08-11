@@ -16,8 +16,20 @@ class AutoControllerTask extends ControllerTask {
         $prefix = $this->AutoModel->getPrefix();
         $newName = preg_replace('/' . $prefix . '/i', '', $table);
 
-        debug($this->params);
+        // debug(compact('newName', 'table', 'prefix', 'name'));
+        // exit();
 
         parent::main($newName);
+    }
+
+    /**
+     * Outputs and gets the list of possible controllers from database
+     *
+     * @return array Set of controllers
+     */
+    public function listAll()
+    {
+        $this->AutoModel->connection = $this->connection;
+        return $this->AutoModel->listAll();
     }
 }
