@@ -43,22 +43,22 @@ Autobake can "auto-generate" all your models, controllers and views from a given
 
 # Usage
 
-#### Baking models
+##### Baking models
 ``` bash
-./cake prepare auto_model users
+$ cake prepare auto_model users
 ```
 
-#### Baking controllers
+##### Baking controllers
 ``` bash
-./cake prepare auto_controller --prefix myprefix users
+$ cake prepare auto_controller --prefix myprefix users
 ```
 
-#### Baking templates
+##### Baking templates
 ``` bash
-./cake prepare auto_template --prefix myprefix users
+$ cake prepare auto_template --prefix myprefix users
 ```
 
-#### And the most powerfull tool: baking all, with prefix :).
+##### And the most powerfull tool: baking all, with prefix :).
 ``` bash
-./cake prepare all --prefix myprefix users
+$ cake prepare all --prefix myprefix users
 ```
