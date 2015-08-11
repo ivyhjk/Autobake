@@ -6,9 +6,11 @@ You can install this plugin into your CakePHP application using [composer](http:
 
 The recommended way to install composer packages is:
 
+``` bash
+$ composer require ivyhjk/autobake
 ```
-composer require ivyhjk/autobake
-```
+
+
 # autobake
 
 Autobake can "auto-generate" all your models, controllers and views from a given database, previously established in your App/config/app.php file.
@@ -32,6 +34,7 @@ Autobake can "auto-generate" all your models, controllers and views from a given
 	        ],
 	    ],
 ```
+
 
 # Usage
 ```
