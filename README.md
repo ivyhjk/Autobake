@@ -35,5 +35,10 @@ Autobake can "auto-generate" all your models, controllers and views from a given
 
 # Usage
 ```
-php Shell/prepare all
+./cake prepare auto_model users
+./cake prepare auto_controller --prefix myprefix users
+./cake prepare auto_template --prefix myprefix users
+./cake prepare all --prefix myprefix users
+
 ```
+
