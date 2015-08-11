@@ -10,6 +10,11 @@ The recommended way to install composer packages is:
 $ composer require ivyhjk/autobake
 ```
 
+## Plugin activation
+
+``` bash
+$ bin/cake plugin load Autobake
+```
 
 # autobake
 
