@@ -1,4 +1,4 @@
-# Autobake plugin for CakePHP
+# Autobake plugin for CakePHP 3
 
 ## Installation
 
