@@ -13,7 +13,6 @@ class PrepareShell extends CakeBake {
 
 
         if ( ! isset($this->params['prefix']) || ! $this->params['prefix']) {
-            // $prefix = $this->in('No ha seleccionado un prefijo, desea que el prefijo sea "admin"?');
             $prefix = $this->in('No ha seleccionado un prefijo, desea que el prefijo sea "admin"?', ['y', 'n'], 'y');
 
             if ($prefix === 'y') {
