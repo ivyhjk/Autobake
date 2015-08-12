@@ -13,6 +13,15 @@ class AutoModelTask extends ModelTask {
 	public $prefix = '';
 
     /**
+     * tasks
+     *
+     * @var array
+     */
+    public $tasks = [
+        'Autobake.AutoBakeTemplate',
+    ];
+
+    /**
      * Generate code for the given model name.
      *
      * @param string $name The model name to generate.
@@ -22,6 +31,8 @@ class AutoModelTask extends ModelTask {
     {
         $table = $this->getTable($name);
         $model = $this->getTableObject($name, $table);
+
+        $prefix = $this->getPrefix();
 
         $associations = $this->getAssociations($model);
         $this->applyAssociations($model, $associations);
@@ -43,8 +54,12 @@ class AutoModelTask extends ModelTask {
             'validation',
             'rulesChecker',
             'behaviors',
-            'connection'
+            'connection',
+            'prefix'
         );
+
+        $this->BakeTemplate = $this->AutoBakeTemplate;
+
         $this->bakeTable($model, $data);
         $this->bakeEntity($model, $data);
         $this->bakeFixture($model->alias(), $model->table());
